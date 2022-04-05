@@ -1,5 +1,5 @@
 
-from re import A
+
 #functions
 
 #check if number is greater than zero
@@ -16,10 +16,11 @@ def num_check (question):
                 return response
 
             else:
-                    print(error)
+                print(error)
 
         except ValueError:
-                        print(error)
+                print(error)
+                print()
                         
 
        
@@ -33,10 +34,13 @@ def num_check (question):
 
     width = num_check ( "Width: ")
     height = num_check ( "Height: ")
-    print()
-    print("Width", width)
-    print("Height", height)
-    print()
+    print("width",width)
+    print("height",height)
+    area = width * height
+    perimiter = (width + height)* 2
+    print("Perimeter: ", perimiter)
+    print("Area: ", area)
             
+    num_check(question)
 
         
