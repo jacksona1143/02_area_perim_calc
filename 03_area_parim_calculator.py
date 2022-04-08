@@ -17,30 +17,24 @@ def num_check (question):
 
             else:
                 print(error)
+                
 
         except ValueError:
-                print(error)
+                print("Please enter a number")
                 print()
                         
-
-       
-        
-        
-
-         
 
 
 #code runs here
 
-    width = num_check ( "Width: ")
-    height = num_check ( "Height: ")
-    print("width",width)
-    print("height",height)
-    area = width * height
-    perimiter = (width + height)* 2
-    print("Perimeter: ", perimiter)
-    print("Area: ", area)
-            
-    num_check(question)
+width = num_check ( "Width: ")
+height = num_check ( "Height: ")
+print("width",width)
+print("height",height)
+area = width * height
+perimiter = (width + height)* 2
+print("Perimeter: ", perimiter)
+print("Area: ", area)
+    
 
         
