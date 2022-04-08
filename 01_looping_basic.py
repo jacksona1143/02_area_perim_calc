@@ -1,7 +1,5 @@
 
-from re import A
 
-#testing github
 
 valid = False
 
