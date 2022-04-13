@@ -33,6 +33,8 @@ print("width",width)
 print("height",height)
 area = width * height
 perimiter = (width + height)* 2
+print()
+print()
 print("Perimeter: ", perimiter)
 print("Area: ", area)
     
