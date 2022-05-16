@@ -5,7 +5,7 @@ def num_check(question):
     valid = False
     while not valid:
         
-        error = "Please enter a number that is more than zero"
+        error = "Please enter a value more than 0"
         
         try:
         
@@ -22,7 +22,7 @@ def num_check(question):
                 print()
                 
         except ValueError:
-            print(error)    
+            print("Please enter a number")    
     
 
 
@@ -40,18 +40,18 @@ while keep_going == "":
     # call your number checker function three times to get the 
     # width, length and cost_per_m of the fencing
     width = num_check ( "Width: ")
-    height = num_check ( "Height: ")
+    length = num_check ( "length: ")
     cost_per_m = num_check("Cost Per Metre: $")
 
     # Calulate perimeter (width + height) x 2
-    perimeter = (width + height)* 2
+    perimeter = 2*(width + length)
     
     # Calculate the cost of the fencing (perimeter x price / meter)
-    cost_of_fencing = (perimeter * cost_per_m * 2)
+    cost_of_fencing = (perimeter * cost_per_m )
 
     # Output the perimeter and cost of the fencing
-
-    
+    print("perimeter: ", perimeter)
+    print("Cost of fencing: $", cost_of_fencing)
     keep_going = input("Press <enter> to keep going or any key to quit")
     
 print()
